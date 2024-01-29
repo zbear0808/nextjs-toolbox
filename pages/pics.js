@@ -1,4 +1,8 @@
 import Head from "next/head";
+import Link from "next/link";
+import PageHeader from "@components/PageHeader";
+
+
 import { Global, css } from "@emotion/react";
 
 // idk wtf this actually means. But this is how i set the outermost div or body? to be the width of the screen without any scrolling
@@ -11,7 +15,7 @@ const GlobalStyle = css`
   }
 `;
 const header = css({
-
+  justifyContent: "center",
   color: "white",
   overflowX: "hidden",
   backgroundColor: "black",
@@ -19,15 +23,40 @@ const header = css({
   display: "flex",
   flexDirection: "row",
 });
+const headerColumn = css({
+  display: "flex",
+  flex: 1,
+  height: "100%",
+  padding: 5,
+  justifyContent: "center"
+});
+const headerColumnLeft = css({
+  display: "flex",
+  flex: 1,
+  height: "100%",
+  padding: 5,
+  justifyContent: "flex-start"
+});
+const headerColumnRight = css({
+  display: "flex",
+  flex: 1,
+  height: "100%",
+  padding: 5,
+  justifyContent: "flex-end"
+});
+const bigHead = css({
+  color: "white",
+ fontSize: 40,
+ padding: 10,
+ textDecoration: "none"
+});
+
 const maindiv = css({
-  //textDecoration: 'underline',
-  //columnCount: 2,
-  //columnGap: "20px",
-  //padding: 20,
   overflowX: "hidden",
   backgroundColor: "black",
   //width: "100vw",
   padding: 10,
+  paddingTop: 0,
   display: "flex",
   flexDirection: "row",
 });
@@ -55,7 +84,24 @@ const vid = css({
 export default function Pics() {
   return (
     <div>
-      <header css={header}>Zubair Ahmed</header>
+      {/* <header css={header}>
+      
+      <div css={headerColumnLeft}>
+        <a css={bigHead} href="/pics"> Pictures </a>
+        <a css={bigHead} href="/videos"> Videos </a>
+        </div>
+
+        <div css={headerColumn}>
+        <a css={bigHead} href="/"> Zubair Ahmed </a>
+        </div>
+
+        <div css={headerColumnRight}>
+        <a css={bigHead} href="/contact"> Contact </a>
+        <a css={bigHead} href="/about"> About </a>
+        </div>
+
+      </header> */}
+      <PageHeader/>
       <div css={maindiv}>
         <Global styles={GlobalStyle} />
         <Head>
@@ -113,7 +159,6 @@ export default function Pics() {
             src="/REYSUO BW compress.jpg"
             alt="wide shot of the stage with reysuo"
           />
-        
         </div>
       </div>
     </div>
