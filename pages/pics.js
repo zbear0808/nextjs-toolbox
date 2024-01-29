@@ -1,45 +1,121 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import { css } from '@emotion/react'
+import Head from "next/head";
+import { Global, css } from "@emotion/react";
 
-import Footer from '@components/Footer'
+// idk wtf this actually means. But this is how i set the outermost div or body? to be the width of the screen without any scrolling
+const GlobalStyle = css`
+  body {
+    width: 100vw
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+`;
+const header = css({
 
-
-
-
-const maindiv = css({
-  textDecoration: 'underline',
-  columnCount: 2,
-  columnGap: "20px",
+  color: "white",
+  overflowX: "hidden",
+  backgroundColor: "black",
+  //width: "100vw",
   display: "flex",
-  flexDirection: "row"
+  flexDirection: "row",
+});
+const maindiv = css({
+  //textDecoration: 'underline',
+  //columnCount: 2,
+  //columnGap: "20px",
+  //padding: 20,
+  overflowX: "hidden",
+  backgroundColor: "black",
+  //width: "100vw",
+  padding: 10,
+  display: "flex",
+  flexDirection: "row",
+});
 
-})
+const column = css({
+  flex: 1,
+  height: "100%",
+  padding: 5,
+});
+
+const img = css({
+  width: "100%",
+  height: "auto",
+  objectFit: "cover",
+  paddingTop: 5,
+});
+
+const vid = css({
+  width: "100%",
+  height: "100%",
+  //objectFit: "cover",
+  paddingTop: 5,
+});
 
 export default function Pics() {
   return (
-    <div className="container">
-      <Head>
-        <title>Pictures</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div>
+      <header css={header}>Zubair Ahmed</header>
+      <div css={maindiv}>
+        <Global styles={GlobalStyle} />
+        <Head>
+          <title>Pictures</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-      <div css={maindiv}> "whyyy" 
-     
-          <img src="/BASS GIRLS teddy.jpg" alt="Hot girls perform with a laser in the foreground" />
-          <img src="/BASS GIRLS wide.jpg" alt="Hot girls perform with a laser in the foreground" />
-          <img src="/boogie boi.jpg" alt="Hot dudes DJ with a laser" />
+        <div css={column}>
+          <img
+            css={img}
+            src="/BASS GIRLS teddy.jpg"
+            alt="Hot girls perform with a laser in the foreground"
+          />
+          <img
+            css={img}
+            src="/gudemami.jpg"
+            alt="gudemami performing her set (she can be my mami 🥵)"
+          />
+          <img
+            css={img}
+            src="/BASS GIRLS wide.jpg"
+            alt="wide shot of anna weezy, jvzumi, and lapurgs"
+          />
+          <img
+            css={img}
+            src="/gensuo VERT.jpg"
+            alt="vertical shot of Gensuo looking sick af between lasers, with reydium in the background"
+          />
+        </div>
 
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/qEGCYq2mwR8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-          <h1>Submission Received!</h1>
-          <p>Thank you for your feedback! Head back to the 
-            <Link href="/"> home page </Link>
-            .</p>
-
+        <div css={column}>
+          <img css={img} src="/REYSUO front stage.jpg" alt="" />
+          <img
+            css={img}
+            src="/indigo b2b.jpg"
+            alt="E/J b2b indigo, with liquid sky effect above"
+          />
+          <img
+            css={img}
+            src="/boogie boi.jpg"
+            alt="Hot dudes DJ with a laser"
+          />
+          <img
+            css={img}
+            src="/yeahdudesame.jpg"
+            alt="b2b of gudemami and yeahdudesame"
+          />
+          <img
+            css={img}
+            src="/crowd.jpg"
+            alt="pic of crowd with lasers above"
+          />
+          <img
+            css={img}
+            src="/REYSUO BW compress.jpg"
+            alt="wide shot of the stage with reysuo"
+          />
+        
+        </div>
       </div>
-
-      <Footer />
     </div>
-  )
+  );
 }
