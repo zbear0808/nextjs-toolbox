@@ -5,6 +5,7 @@ import { Global, css } from "@emotion/react";
 
 
 const header = css({
+  alignItems: "center",
     justifyContent: "center",
     color: "white",
     overflowX: "hidden",
@@ -58,6 +59,12 @@ const header = css({
   export default function PageHeader() {
     return (
   <header css={header}>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;400&display=swap"
+        rel="stylesheet"
+      />
       
       <div css={headerColumnLeft}>
         <a css={smallHead} href="/pics"> Pictures </a>

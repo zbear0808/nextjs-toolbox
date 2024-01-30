@@ -8,7 +8,7 @@ import { Global, css } from "@emotion/react";
 // idk wtf this actually means. But this is how i set the outermost div or body? to be the width of the screen without any scrolling
 const GlobalStyle = css`
   body {
-    width: 100vw
+    
     margin: 0;
     padding: 0;
     background-color: black;
@@ -18,6 +18,7 @@ const GlobalStyle = css`
 const wrapperDiv = css({
   width: "100%",
   display: "flex",
+  flexWrap: "wrap"
 });
 
 const vidColumn = css({
