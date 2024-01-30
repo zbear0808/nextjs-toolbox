@@ -12,10 +12,8 @@ const GlobalStyle = css`
   }
 `;
 
-const maindiv = css({
-  overflowX: "hidden",
-  backgroundColor: "black",
-  columnCount: 3,
+const main = css({
+  color: "white",
 });
 
 const column = css({
@@ -24,42 +22,49 @@ const column = css({
   padding: "20%",
   paddingTop: 0,
   paddingBottom: 0,
-  color: "white"
-
+  color: "white",
 });
 
 const vid = css({
   paddingTop: 10,
 });
 
-
 export default function About() {
   return (
-    <div //css={maindiv}
-      className="container"
-    >
+    <div className="container">
       <Head>
-        <title>About</title>
+        <title>zugood lasers | About</title>
         <link rel="icon" href="/laser warning.svg" />
       </Head>
       <Global styles={GlobalStyle} />
 
       <PageHeader />
 
-      <div css={column}>
-       Zubair is really cool and sexy and hot. 
-       and he's the greatest laser artist alive
+      <main css={main}>
+        <h1>Who is he 🤨</h1>
+        <p>
+          Zubair is really cool and sexy and hot 🥵. and he's the greatest laser
+          artist alive
+        </p>
 
+        <h1>what he do❓</h1>
+        <p>
+          He is primarily a laser operator and uses Beyond. Also experienced with
+          setting up and operating laser equipment at venues of all sizes.
+          Performed at various shows ran by small artists, as well as insomniac
+          festivals. Even performed for notable artists such as Acraze and Reaper
+          <br/><br/>
+          Sometimes he also makes Visuals, (looking to learn to be a VJ soon)
+        </p>
 
-
-        sometimes he also makes Visuals, (looking to learn to be a VJ soon)
-        experienced with setting up and operating laser equipment. 
-
-        Performed at various shows ran by small artist, as well as insomniac festivals. 
-
-        performed for artists such as Acraze and Reaper
-
-      </div>
+        <h1>What can i pay him to do 🤑</h1>
+        <ul>
+          <li>Rent out and setup laser hardware (Seattle only) </li>
+          <li>Operate lasers </li>
+          <li>Timecoded Laser shows</li>
+          <li>Timecoded Visuals</li>
+        </ul>
+      </main>
     </div>
   );
 }

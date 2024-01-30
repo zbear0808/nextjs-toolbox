@@ -51,7 +51,7 @@ export default function Videos() {
       className="container"
     >
       <Head>
-        <title>Videos</title>
+        <title>zugood lasers | Videos</title>
         <link rel="icon" href="/laser warning.svg" />
       </Head>
       <Global styles={GlobalStyle} />

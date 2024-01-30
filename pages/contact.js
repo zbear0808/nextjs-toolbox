@@ -40,7 +40,7 @@ export default function Contact() {
       className="container"
     >
       <Head>
-        <title>Contact</title>
+        <title>zugood lasers | Contact</title>
         <link rel="icon" href="/laser warning.svg" />
       </Head>
       <Global styles={GlobalStyle} />

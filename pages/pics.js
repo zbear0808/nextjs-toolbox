@@ -105,7 +105,7 @@ export default function Pics() {
       <div css={maindiv}>
         <Global styles={GlobalStyle} />
         <Head>
-          <title>Pictures</title>
+          <title>zugood lasers | Pictures</title>
           <link rel="icon" href="/laser warning.svg" />
         </Head>
 
