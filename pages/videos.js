@@ -52,7 +52,7 @@ export default function Videos() {
     >
       <Head>
         <title>Videos</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/laser warning.svg" />
       </Head>
       <Global styles={GlobalStyle} />
 

@@ -24,14 +24,14 @@ const vidColumn = css({
   flex: 1.5,
   height: "100%",
   padding: 5,
-  textAlign: "center"
+  textAlign: "center",
 });
 
 const picColumn = css({
   flex: 1,
   height: "100%",
   padding: 5,
-  textAlign: "center"
+  textAlign: "center",
 });
 const img = css({
   width: "100%",
@@ -51,7 +51,7 @@ export default function Home() {
     <div className="container">
       <Head>
         <title>Good Lasers</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="laser warning.svg" />
       </Head>
       <Global styles={GlobalStyle} />
 

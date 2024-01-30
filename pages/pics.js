@@ -106,7 +106,7 @@ export default function Pics() {
         <Global styles={GlobalStyle} />
         <Head>
           <title>Pictures</title>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/laser warning.svg" />
         </Head>
 
         <div css={column}>

@@ -41,7 +41,7 @@ export default function Contact() {
     >
       <Head>
         <title>Contact</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/laser warning.svg" />
       </Head>
       <Global styles={GlobalStyle} />
 
@@ -49,7 +49,6 @@ export default function Contact() {
 
       <div css={column}>
        email: zugood.lasers@gmail.com
-       I will probably need to add a form to send me messages
       </div>
 
       <FeedbackForm />

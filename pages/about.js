@@ -40,7 +40,7 @@ export default function About() {
     >
       <Head>
         <title>About</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/laser warning.svg" />
       </Head>
       <Global styles={GlobalStyle} />
 
