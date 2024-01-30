@@ -44,11 +44,18 @@ const anchorStyle = css({
   color: "white",
   textAlign: "center",
   textDecoration: "none",
+  fontFamily: "Outfit",
 });
 
 export default function Home() {
   return (
     <div className="container">
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;400&display=swap"
+        rel="stylesheet"
+      />
       <Head>
         <title>Good Lasers</title>
         <link rel="icon" href="laser warning.svg" />

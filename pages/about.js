@@ -44,10 +44,12 @@ export default function About() {
         <h1>Who is he 🤨</h1>
         <p>
           Zubair is really cool and sexy and hot 🥵. and he's the greatest laser
-          artist alive
+          artist alive <br/>
+          (realistically just one of the good ones in the Seattle / PNW area) <br/>
+
         </p>
 
-        <h1>what he do❓</h1>
+        <h1>What he do❓</h1>
         <p>
           He is primarily a laser operator and uses Beyond. Also experienced with
           setting up and operating laser equipment at venues of all sizes.
@@ -62,7 +64,7 @@ export default function About() {
           <li>Rent out and setup laser hardware (Seattle only) </li>
           <li>Operate lasers </li>
           <li>Timecoded Laser shows</li>
-          <li>Timecoded Visuals</li>
+          <li>Timecoded Visuals (I use TouchDesigner and some Blender)</li>
         </ul>
       </main>
     </div>

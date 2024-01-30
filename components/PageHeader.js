@@ -1,6 +1,7 @@
 
 
 import { Global, css } from "@emotion/react";
+//import { Inter } from 'next/font/google'
 
 
 const header = css({
@@ -42,13 +43,15 @@ const header = css({
     color: "white",
    fontSize: 40,
    padding: 10,
-   textDecoration: "none"
+   textDecoration: "none",
+   fontFamily: "Outfit",
   });
   const smallHead = css({
     color: "white",
    fontSize: 25,
    padding: 10,
-   textDecoration: "none"
+   textDecoration: "none",
+   fontFamily: "Outfit",
   });
 
 
