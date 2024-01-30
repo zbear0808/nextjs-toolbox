@@ -68,7 +68,7 @@ export default function Home() {
           <a css={anchorStyle} href="/pics">
             <img
               css={img}
-              src="/slideshow.gif"
+              src="/slowerSlideshow.gif"
               alt="slideshow of various pictures of lasers taken at shows"
             />
             Pictures
