@@ -33,7 +33,6 @@ const header = css({
   const headerColumnRight = css({
     display: "flex",
     flexWrap: "wrap",
-
     flex: 1,
     height: "100%",
     padding: 5,
