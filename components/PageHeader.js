@@ -15,12 +15,16 @@ const header = css({
   const headerColumn = css({
     display: "flex",
     flex: 1,
+    flexWrap: "wrap",
     height: "100%",
     padding: 5,
-    justifyContent: "center"
+    justifyContent: "center",
+    textAlign: "center"
   });
   const headerColumnLeft = css({
     display: "flex",
+    flexWrap: "wrap",
+
     flex: 1,
     height: "100%",
     padding: 5,
@@ -28,6 +32,8 @@ const header = css({
   });
   const headerColumnRight = css({
     display: "flex",
+    flexWrap: "wrap",
+
     flex: 1,
     height: "100%",
     padding: 5,
@@ -39,14 +45,21 @@ const header = css({
    padding: 10,
    textDecoration: "none"
   });
+  const smallHead = css({
+    color: "white",
+   fontSize: 25,
+   padding: 10,
+   textDecoration: "none"
+  });
+
 
   export default function PageHeader() {
     return (
   <header css={header}>
       
       <div css={headerColumnLeft}>
-        <a css={bigHead} href="/pics"> Pictures </a>
-        <a css={bigHead} href="/videos"> Videos </a>
+        <a css={smallHead} href="/pics"> Pictures </a>
+        <a css={smallHead} href="/videos"> Videos </a>
         </div>
 
         <div css={headerColumn}>
@@ -54,8 +67,8 @@ const header = css({
         </div>
 
         <div css={headerColumnRight}>
-        <a css={bigHead} href="/contact"> Contact </a>
-        <a css={bigHead} href="/about"> About </a>
+        <a css={smallHead} href="/contact"> Contact </a>
+        <a css={smallHead} href="/about"> About </a>
         </div>
 
       </header>

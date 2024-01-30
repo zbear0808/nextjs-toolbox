@@ -49,6 +49,16 @@ export default function About() {
       <div css={column}>
        Zubair is really cool and sexy and hot. 
        and he's the greatest laser artist alive
+
+
+
+        sometimes he also makes Visuals, (looking to learn to be a VJ soon)
+        experienced with setting up and operating laser equipment. 
+
+        Performed at various shows ran by small artist, as well as insomniac festivals. 
+
+        performed for artists such as Acraze and Reaper
+
       </div>
     </div>
   );
