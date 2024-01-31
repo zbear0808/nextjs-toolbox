@@ -62,8 +62,7 @@ const maindiv = css({
 });
 
 const column = css({
-  flex: 1,
-  height: "100%",
+  flex: "1 1 450px",
   padding: 5,
 });
 

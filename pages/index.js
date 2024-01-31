@@ -18,18 +18,19 @@ const GlobalStyle = css`
 const wrapperDiv = css({
   width: "100%",
   display: "flex",
-  flexWrap: "wrap"
+  flexWrap: "wrap",
+  padding: 10
 });
 
 const vidColumn = css({
-  flex: 1.5,
+  flex: "1.5 1.5 600px",
   height: "100%",
   padding: 5,
   textAlign: "center",
 });
 
 const picColumn = css({
-  flex: 1,
+  flex: "1 1 400px",
   height: "100%",
   padding: 5,
   textAlign: "center",
@@ -51,12 +52,7 @@ const anchorStyle = css({
 export default function Home() {
   return (
     <div className="container">
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;400&display=swap"
-        rel="stylesheet"
-      />
+      
       <Head>
         <title>Good Lasers</title>
         <link rel="icon" href="laser warning.svg" />
