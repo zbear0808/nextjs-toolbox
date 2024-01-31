@@ -2,7 +2,6 @@ import Head from "next/head";
 import Link from "next/link";
 import PageHeader from "@components/PageHeader";
 
-
 import { Global, css } from "@emotion/react";
 
 // idk wtf this actually means. But this is how i set the outermost div or body? to be the width of the screen without any scrolling
@@ -14,51 +13,15 @@ const GlobalStyle = css`
     background-color: black;
   }
 `;
-const header = css({
-  justifyContent: "center",
-  color: "white",
-  overflowX: "hidden",
-  backgroundColor: "black",
-  //width: "100vw",
-  display: "flex",
-  flexDirection: "row",
-});
-const headerColumn = css({
-  display: "flex",
-  flex: 1,
-  height: "100%",
-  padding: 5,
-  justifyContent: "center"
-});
-const headerColumnLeft = css({
-  display: "flex",
-  flex: 1,
-  height: "100%",
-  padding: 5,
-  justifyContent: "flex-start"
-});
-const headerColumnRight = css({
-  display: "flex",
-  flex: 1,
-  height: "100%",
-  padding: 5,
-  justifyContent: "flex-end"
-});
-const bigHead = css({
-  color: "white",
- fontSize: 40,
- padding: 10,
- textDecoration: "none"
-});
 
 const maindiv = css({
   overflowX: "hidden",
   backgroundColor: "black",
-  //width: "100vw",
   padding: 10,
   paddingTop: 0,
   display: "flex",
   flexDirection: "row",
+  flexWrap: "wrap",
 });
 
 const column = css({
@@ -100,36 +63,13 @@ export default function Pics() {
         </div>
 
       </header> */}
-      <PageHeader/>
+      <PageHeader />
       <div css={maindiv}>
         <Global styles={GlobalStyle} />
         <Head>
           <title>zugood lasers | Pictures</title>
           <link rel="icon" href="/laser warning.svg" />
         </Head>
-
-        <div css={column}>
-          <img
-            css={img}
-            src="/BASS GIRLS teddy.jpg"
-            alt="Hot girls perform with a laser in the foreground"
-          />
-          <img
-            css={img}
-            src="/gudemami.jpg"
-            alt="gudemami performing her set (she can be my mami 🥵)"
-          />
-          <img
-            css={img}
-            src="/BASS GIRLS wide.jpg"
-            alt="wide shot of anna weezy, jvzumi, and lapurgs"
-          />
-          <img
-            css={img}
-            src="/gensuo VERT.jpg"
-            alt="vertical shot of Gensuo looking sick af between lasers, with reydium in the background"
-          />
-        </div>
 
         <div css={column}>
           <img css={img} src="/REYSUO front stage.jpg" alt="" />
@@ -157,6 +97,29 @@ export default function Pics() {
             css={img}
             src="/REYSUO BW compress.jpg"
             alt="wide shot of the stage with reysuo"
+          />
+        </div>
+
+        <div css={column}>
+          <img
+            css={img}
+            src="/BASS GIRLS teddy.jpg"
+            alt="Hot girls perform with a laser in the foreground"
+          />
+          <img
+            css={img}
+            src="/gudemami.jpg"
+            alt="gudemami performing her set (she can be my mami 🥵)"
+          />
+          <img
+            css={img}
+            src="/BASS GIRLS wide.jpg"
+            alt="wide shot of anna weezy, jvzumi, and lapurgs"
+          />
+          <img
+            css={img}
+            src="/gensuo VERT.jpg"
+            alt="vertical shot of Gensuo looking sick af between lasers, with reydium in the background"
           />
         </div>
       </div>

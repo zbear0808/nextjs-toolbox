@@ -8,7 +8,7 @@ const header = css({
   alignItems: "center",
     justifyContent: "center",
     color: "white",
-    overflowX: "hidden",
+    overflowX: "auto",
     backgroundColor: "black",
     //width: "100vw",
     display: "flex",
