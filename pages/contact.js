@@ -20,6 +20,14 @@ const maindiv = css({
   columnCount: 3,
 });
 
+const cringeAssStyle = css({
+  display: "flex",
+  flexDirection: "column",
+  alignContent: "center",
+  alignItems: "center"
+  //justifyContent: "center"
+});
+
 const column = css({
   display: "flex",
   flexDirection: "column",
@@ -47,11 +55,13 @@ export default function Contact() {
 
       <PageHeader />
 
+    <div css={cringeAssStyle} > 
       <div css={column}>
        email: zugood.lasers@gmail.com
       </div>
 
       <FeedbackForm />
+    </div>
     </div>
   );
 }
