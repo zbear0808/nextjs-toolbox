@@ -29,6 +29,12 @@ const vid = css({
   paddingTop: 10,
 });
 
+const miniGreyText = css({
+  paddingTop: 200,
+  color: "grey",
+  fontSize: 1
+});
+
 export default function About() {
   return (
     <div className="container">
@@ -43,9 +49,10 @@ export default function About() {
       <main css={main}>
         <h1>Who is he 🤨</h1>
         <p>
-          Zubair is really cool and sexy and hot 🥵. and he's the greatest laser
-          artist alive <br/>
-          (realistically just one of the good ones in the Seattle / PNW area) <br/>
+          I'm the greatest laser artist alive <br/>
+          (realistically just one of the good ones in the Seattle / PNW area) <br/><br/>
+          
+          Been performing since 2023, big fan of all genres of EDM, but especially trap and dnb<br/>
 
         </p>
 
@@ -66,6 +73,11 @@ export default function About() {
           <li>Timecoded Laser shows</li>
           <li>Timecoded Visuals (I use TouchDesigner and some Blender)</li>
         </ul>
+
+
+        <p css={miniGreyText}>
+          maybe if he get enough money he can buy a non shitty domain for this jank ass website <br></br>
+          lemme also throw in some buzzwords for SEO. Live show stage setup production lighting designer operator LD VJ LJ Seattle PNW Slick Lasers Nice Lasers EDM Music stage lighting rental service </p>
       </main>
     </div>
   );

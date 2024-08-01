@@ -4,6 +4,12 @@ import { Global, css } from "@emotion/react";
 //import { Inter } from 'next/font/google'
 
 
+const buttonHoverState = {
+  background: "white",
+  borderRadius: "100px",
+  color: "black"
+  }
+
 const header = css({
   alignItems: "center",
     justifyContent: "center",
@@ -46,6 +52,7 @@ const header = css({
    padding: 10,
    textDecoration: "none",
    fontFamily: "Outfit",
+   '&:hover' : buttonHoverState
   });
   const smallHead = css({
     color: "white",
@@ -53,6 +60,7 @@ const header = css({
    padding: 10,
    textDecoration: "none",
    fontFamily: "Outfit",
+   '&:hover' : buttonHoverState
   });
 
 

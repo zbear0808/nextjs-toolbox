@@ -72,30 +72,34 @@ export default function Pics() {
         </Head>
 
         <div css={column}>
-          <img css={img} src="/REYSUO front stage.jpg" alt="" />
           <img
             css={img}
-            src="/indigo b2b.jpg"
+            src="/REYSUO front stage.webp"
+            alt="Wide shot of Gensuo in between Lasers, and he's wearing earplugs, don't forget kids ALWAYS use protection"
+          />
+          <img
+            css={img}
+            src="/indigo b2b.webp"
             alt="E/J b2b indigo, with liquid sky effect above"
           />
           <img
             css={img}
-            src="/boogie boi.jpg"
+            src="/boogie boi.webp"
             alt="Hot dudes DJ with a laser"
           />
           <img
             css={img}
-            src="/yeahdudesame.jpg"
+            src="/yeahdudesame.webp"
             alt="b2b of gudemami and yeahdudesame"
           />
           <img
             css={img}
-            src="/crowd.jpg"
+            src="/crowd.webp"
             alt="pic of crowd with lasers above"
           />
           <img
             css={img}
-            src="/REYSUO BW compress.jpg"
+            src="/REYSUO BW compress.webp"
             alt="wide shot of the stage with reysuo"
           />
         </div>
@@ -103,22 +107,22 @@ export default function Pics() {
         <div css={column}>
           <img
             css={img}
-            src="/BASS GIRLS teddy.jpg"
+            src="/BASS GIRLS teddy.webp"
             alt="Hot girls perform with a laser in the foreground"
           />
           <img
             css={img}
-            src="/gudemami.jpg"
+            src="/gudemami.webp"
             alt="gudemami performing her set (she can be my mami 🥵)"
           />
           <img
             css={img}
-            src="/BASS GIRLS wide.jpg"
+            src="/BASS GIRLS wide.webp"
             alt="wide shot of anna weezy, jvzumi, and lapurgs"
           />
           <img
             css={img}
-            src="/gensuo VERT.jpg"
+            src="/gensuo VERT.webp"
             alt="vertical shot of Gensuo looking sick af between lasers, with reydium in the background"
           />
         </div>
