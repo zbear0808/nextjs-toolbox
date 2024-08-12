@@ -59,8 +59,6 @@ export default function Contact() {
       <div css={column}>
        email: zugood.lasers@gmail.com
       </div>
-
-      <FeedbackForm />
     </div>
     </div>
   );

@@ -15,7 +15,7 @@ const wrapperDiv = css({
   width: "100%",
   display: "flex",
   flexWrap: "wrap",
-  padding: 10
+  padding: 10,
 });
 
 const vidColumn = css({
@@ -46,9 +46,11 @@ const anchorStyle = css({
 });
 
 export default function Home() {
+  // replacing gif with webm vid doesn't work
+  // this is bc a video elemetn is interactive. and you cannot place an interactive
+  // element inside of an anchor <a/>
   return (
     <div className="container">
-      
       <Head>
         <title>Good Lasers</title>
         <link rel="icon" href="laser warning.svg" />
@@ -59,18 +61,33 @@ export default function Home() {
       <div css={wrapperDiv}>
         <div css={vidColumn}>
           <a css={anchorStyle} href="/videos">
-            <img css={img} src="/laserVid.gif" alt="gif of a laser video" />
+            <video
+              css={img}
+              src="/laserVid.webm"
+              autoPlay
+              loop
+              muted
+              playsInline
+            >
+              Video not supported
+            </video>
             Videos
           </a>
         </div>
 
         <div css={picColumn}>
           <a css={anchorStyle} href="/pics">
-            <img
+            <video
               css={img}
-              src="/slowerSlideshow.gif"
+              src="/slowerSlideshow.webm"
               alt="slideshow of various pictures of lasers taken at shows"
-            />
+              autoPlay
+              loop
+              muted
+              playsInline
+              >
+              Video not supported
+            </video>
             Pictures
           </a>
         </div>
