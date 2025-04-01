@@ -6,12 +6,9 @@ import styled from '@emotion/styled';
 const SlideshowContainer = styled.div`
   position: relative;
   width: 100%;
-  max-width: 800px;
   height: 450px; /* Fixed height, but you can adjust this */
-  margin: 0 auto;
   overflow: hidden;
   background-color:rgba(0, 0, 0, 1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,7 +41,7 @@ const SlideImage = styled.img`
  * @param {Array} props.images - Array of image objects: [{ src, alt }]
  * @param {number} props.interval - Interval for auto-sliding in milliseconds
  */
-const ImageSlideshow = ({ images = [], interval = 1000 }) => {
+const ImageSlideshow = ({ images = [], interval = 1500 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Handle auto-sliding

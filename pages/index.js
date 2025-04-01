@@ -15,19 +15,33 @@ const GlobalStyle = css`
 const wrapperDiv = css({
   width: "100%",
   display: "flex",
+  // alignContent: "bottom",
+  alignItems: "flex-end",
   flexWrap: "wrap",
   padding: 10,
 });
 
 const vidColumn = css({
-  flex: "1.5 1.5 600px",
+  flex: "1 1 500px",
+  alignItems: "bottom",
   height: "100%",
   padding: 5,
   textAlign: "center",
 });
 
+const gifContainer = css({
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
+  //alignItems: "bottom",
+  height: "100%",
+  // padding: 5,
+  textAlign: "center",
+});
+
 const picColumn = css({
-  flex: "1 1 400px",
+  flex: "1 1 500px",
   height: "100%",
   padding: 5,
   textAlign: "center",
@@ -73,7 +87,9 @@ export default function Home() {
       <div css={wrapperDiv}>
         <div css={vidColumn}>
           <a css={anchorStyle} href="/videos">
-          <img src="laserVid.gif"/>
+          <div css={gifContainer}>  
+            <img src="laserVid.gif" css={img}/> 
+             </div> 
             {/* <video
               css={img}
               src="/laserVid.webm"
