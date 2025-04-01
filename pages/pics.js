@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import PageHeader from "@components/PageHeader";
 
 import { Global, css } from "@emotion/react";
@@ -72,6 +71,21 @@ export default function Pics() {
         </Head>
 
         <div css={column}>
+        <img
+            css={img}
+            src="/CHYLPics-2.jpg"
+            alt="CHYLPics-2"
+          />
+          <img
+            css={img}
+            src="/CHYLPics-6.jpg"
+            alt="CHYLPics-6"
+          />
+          <img
+            css={img}
+            src="/CHYLPics-18.jpg"
+            alt="CHYLPics-18"
+          />
           <img
             css={img}
             src="/REYSUO front stage.webp"
@@ -102,6 +116,7 @@ export default function Pics() {
             src="/REYSUO BW compress.webp"
             alt="wide shot of the stage with reysuo"
           />
+
         </div>
 
         <div css={column}>
@@ -124,6 +139,21 @@ export default function Pics() {
             css={img}
             src="/gensuo VERT.webp"
             alt="vertical shot of Gensuo looking sick af between lasers, with reydium in the background"
+          />
+          <img
+            css={img}
+            src="/CHYLPics-4.jpg"
+            alt="CHYLPics-4"
+          />
+          <img
+            css={img}
+            src="/CHYLPics-13.jpg"
+            alt="CHYLPics-13"
+          />
+          <img
+            css={img}
+            src="/CHYLPics-29.jpg"
+            alt="CHYLPics-29"
           />
         </div>
       </div>

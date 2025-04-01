@@ -61,7 +61,7 @@ export default function About() {
           He is primarily a laser operator and uses Beyond. Also experienced with
           setting up and operating laser equipment at venues of all sizes.
           Performed at various shows ran by small artists, as well as insomniac
-          festivals. Even performed for notable artists such as Acraze and Reaper
+          festivals. Even performed for notable artists such as Acraze, Reaper, and CHYL
           <br/><br/>
           Sometimes he also makes Visuals, (looking to learn to be a VJ soon)
         </p>

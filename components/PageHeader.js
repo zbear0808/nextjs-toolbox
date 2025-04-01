@@ -6,7 +6,6 @@ import { Global, css } from "@emotion/react";
 
 const buttonHoverState = {
   background: "white",
-  borderRadius: "100px",
   color: "black"
   }
 
@@ -52,6 +51,7 @@ const header = css({
    padding: 10,
    textDecoration: "none",
    fontFamily: "Outfit",
+   borderRadius: "100px",
    '&:hover' : buttonHoverState
   });
   const smallHead = css({
@@ -60,6 +60,7 @@ const header = css({
    padding: 10,
    textDecoration: "none",
    fontFamily: "Outfit",
+   borderRadius: "100px",
    '&:hover' : buttonHoverState
   });
 

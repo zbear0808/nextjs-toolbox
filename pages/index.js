@@ -1,6 +1,7 @@
 import Head from "next/head";
 import PageHeader from "@components/PageHeader";
 import { Global, css } from "@emotion/react";
+import ImageSlideshow from "@components/ImageSlideshow";
 
 // idk wtf this actually means. But this is how i set the outermost div or body? to be the width of the screen without any scrolling
 const GlobalStyle = css`
@@ -39,11 +40,22 @@ const img = css({
 });
 
 const anchorStyle = css({
+  display: "flex",
+  flexDirection: "column",
   color: "white",
   textAlign: "center",
   textDecoration: "none",
   fontFamily: "Outfit",
 });
+
+// Define your images
+const slideshowImages = [
+  { src: "/CHYLPics-2.jpg", alt: "Laser show 1" },
+  { src: "/CHYLPics-4.jpg", alt: "Laser show 2" },
+  { src: "/CHYLPics-6.jpg", alt: "Laser show 3" },
+  { src: "/CHYLPics-13.jpg", alt: "Laser show 4" },
+  { src: "/CHYLPics-18.jpg", alt: "Laser show 5" },
+];
 
 export default function Home() {
   // replacing gif with webm vid doesn't work
@@ -61,7 +73,8 @@ export default function Home() {
       <div css={wrapperDiv}>
         <div css={vidColumn}>
           <a css={anchorStyle} href="/videos">
-            <video
+          <img src="laserVid.gif"/>
+            {/* <video
               css={img}
               src="/laserVid.webm"
               autoPlay
@@ -70,24 +83,15 @@ export default function Home() {
               playsInline
             >
               Video not supported
-            </video>
+            </video> */}
             Videos
           </a>
         </div>
 
         <div css={picColumn}>
           <a css={anchorStyle} href="/pics">
-            <video
-              css={img}
-              src="/slowerSlideshow.webm"
-              alt="slideshow of various pictures of lasers taken at shows"
-              autoPlay
-              loop
-              muted
-              playsInline
-              >
-              Video not supported
-            </video>
+          <ImageSlideshow images={slideshowImages}/>
+            {/* <Slideshow images={slideshowImages} duration={25} /> */}
             Pictures
           </a>
         </div>
